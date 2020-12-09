@@ -250,4 +250,10 @@ h3 span,
     color: #f8f9fa;
   }
 
+#contacter_img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  left: 30px;
+}
   
