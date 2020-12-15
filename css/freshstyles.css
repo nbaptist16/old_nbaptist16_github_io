@@ -251,8 +251,8 @@ h3 span,
   }
 
 #contacter_img {
-  width: 100%;
-  max-width: 800px;
+  width: auto;
+  max-width: 1000px;
   height: auto;
   padding-left: 0%;
   /* position: relative; */
