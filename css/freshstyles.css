@@ -266,19 +266,31 @@ html, body {
   padding: 0;
 }
 
+/* added */
+#content {
+  min-height: calc(100vh - 40px);
+}
+
+#footer {
+  height: 50px;
+  background: black;
+  color: white;
+}
+/* end */
+
 footer {
   text-align: center;
   background-color: black;
   color: white;
   position: absolute;
   bottom: 0px;
-  border: solid;
 }
 
 #contacter_img {
-  width: auto;
-  max-width: 1000px;
-  height: auto;
+  width: 50%;
+  /* max-width: 1000px;
+  height: auto; */
+  height: calc(auto*50%);
   padding-left: 0%;
   /* position: relative; */
   /* left: 5px; */
