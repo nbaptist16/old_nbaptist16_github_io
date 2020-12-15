@@ -254,7 +254,7 @@ h3 span,
   /* max-width: 50%;
   height: 50%; */
   width: 50%;
-  height: auto;
+  height: 50%*auto;
   padding-left: 0%;
   /* position: relative; */
   /* left: 5px; */
