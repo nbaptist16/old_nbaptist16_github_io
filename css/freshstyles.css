@@ -162,7 +162,7 @@
 
 nav {
     background-color: #fff;
-    border-bottom: 1px solid #fdbcff;
+    border-bottom: 3px solid #fdbcff;
     font-weight: 700;
 }
 
@@ -253,7 +253,8 @@ h3 span,
 #contacter_img {
   max-width: auto;
   height: auto;
-  position: relative;
-  left: 5px;
+  padding-left: 0%;
+  /* position: relative; */
+  /* left: 5px; */
 }
   
