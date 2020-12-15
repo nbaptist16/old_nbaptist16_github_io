@@ -272,6 +272,7 @@ footer {
   color: white;
   position: absolute;
   bottom: 0px;
+  border: solid;
 }
 
 #contacter_img {
