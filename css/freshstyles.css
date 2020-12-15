@@ -251,8 +251,10 @@ h3 span,
   }
 
 #contacter_img {
-  max-width: 50%;
-  height: 50%;
+  /* max-width: 50%;
+  height: 50%; */
+  width: 50%;
+  height: auto;
   padding-left: 0%;
   /* position: relative; */
   /* left: 5px; */
