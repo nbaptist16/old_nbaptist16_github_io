@@ -272,20 +272,20 @@ html, body {
 }
 
 #footer {
-  height: 500px;
-  background: white;
-  color: black;
+  height: 1500px;
+  background-color: black;
+  color: white;
   text-align: center;
 }
 /* end */
 
-footer {
+/* footer {
   text-align: center;
   background-color: black;
   color: white;
   position: absolute;
   bottom: 0px;
-}
+} */
 
 #contacter_img {
   width: 50%;
