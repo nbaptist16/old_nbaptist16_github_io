@@ -250,6 +250,16 @@ h3 span,
     color: #f8f9fa;
   }
 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   /* text-align: center; */
+}
+
 #contacter_img {
   width: auto;
   max-width: 1000px;
