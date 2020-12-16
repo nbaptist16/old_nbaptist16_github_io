@@ -259,7 +259,7 @@ h3 span,
 #content {
   /* min-height: calc(100vh - 40px); */
   /* min-height: calc(100vh - 800px); */
-  min-height: calc(100vh - 500px);
+  min-height: calc(100vh - 1000px);
 }
 
 #footer {
