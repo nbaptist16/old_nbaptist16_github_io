@@ -272,7 +272,7 @@ html, body {
 }
 
 #footer {
-  height: 1500px;
+  height: 800px;
   background-color: black;
   background: black;
   color: black;
@@ -291,8 +291,9 @@ html, body {
 #contacter_img {
   /* width: 50%;
   height: calc(auto*50%); */
-  width: 75%;
-  height: calc(auto*75%);
+  width: 80%;
+  height: calc(auto*80%);
   padding-left: 0%;
+  bottom: 0px;
 }
   
