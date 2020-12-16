@@ -250,21 +250,10 @@ h3 span,
     color: #f8f9fa;
   }
 
-/* .footer {
-   position: static;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-  
-   background-color: white;
-   color: black;
-   text-align: center;
-} */
-
-html, body {
+/* html, body {
   margin: 0;
   padding: 0;
-}
+} */
 
 /* added */
 #content {
@@ -295,6 +284,6 @@ html, body {
   width: 80%;
   height: calc(auto*80%);
   padding-left: 0%;
-  bottom: 0px;
+  /* bottom: 0px; */
 }
   
