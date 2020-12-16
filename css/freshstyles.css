@@ -259,13 +259,13 @@ h3 span,
 #content {
   /* min-height: calc(100vh - 40px); */
   /* min-height: calc(100vh - 800px); */
-  min-height: calc(100vh - 900px);
+  min-height: calc(100vh - 800px);
 }
 
 #footer {
   /* height: 0px; */
   /* height: 800px; */
-  height: 900px;
+  height: 800px;
   background-color: black;
   background: black;
   color: black;
