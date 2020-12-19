@@ -272,6 +272,12 @@ h3 span,
   text-align: center;
   overflow: auto;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 80px 200px auto 40px;
+}
+
 /* end */
 
 /* footer {
@@ -291,5 +297,10 @@ h3 span,
   padding-left: 0%;
   /* bottom: 0px; */
   float: right;
+}
+
+#resized_img {
+  width: auto;
+  height: auto;
 }
   
