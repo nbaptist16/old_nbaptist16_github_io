@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eng | NB</title>
+        <!--style shit-->
+        <link href="css/freshstyles.css" rel="stylesheet">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- bootstrap.min.css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <!-- main.css -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- font-awesome.min.css -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Lato fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/futura.css">
+        <link rel="stylesheet" href="css/lulo-clean.css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <!--<a class="navbar-brand" href="#">-->
+                <a class="navbar-brand">
+                    <img src="src/copee-a2z-1_xsmall.png" alt="Header Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#home">HOME</a> -->
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#art">ART</a> -->
+                            <a class="nav-link" href="art.html">ART</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#zeng">(Z)ENGINEERING</a> -->
+                            <a class="nav-link" href="eng.html">(Z)ENGINEERING</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h5><center>eng/#Blocked</center></h5>
+        <small><center>A Sawyer, a Turtlebot3, and a RealSense camera walk into a bar...</center></small>
+        <p><br></p>
+        <p></p>
+        <h6>Overview:</h6>
+        <p>For our final project in ME495, our team decided we wanted to be able to take a 3D scan of an object and import it into Minecraft. Our solution was to use the Turtlebot3 as a turntable while the RealSense camera (mounted onto the Sawyer arm) would move around the Turtlebot3 and save the necessary views as pointclouds.
+            The captured pointclouds would then be fused together to make a multi-faced (5 by default) pointcloud object saved as a pointcloud data file (pcd), converted to a ply file, and then imported into Minecraft.
+        </p>
+        <h6>Code:</h6>
+        <p>The code can be split into 3 packages: arm_motion, camera_motion, and camera_reconstruct.</p>
+        * <code>arm_motion:</code><p>controls the motion of the arm and the Turtlebot3 to properly position the camera for scanning</p>
+        * <code>camera_motion:</code><p>processes, aligns, and stabilizes images to be published to the <code>camera_reconstruct</code> nodes</p>
+        * <code>camera_reconstruct:</code><p>fuses the received pointclouds and saves the final product as a pcd file</p>
+
+        <p></p>
+
+        <div id="footer">
+            <p>foote</p>
+            <div class="emailformm">
+                <h4><b style="color: white;">Contact</b></h4>
+                <p style=color:white>nckmlb@gmail.com  /  message by coconut</p>
+    
+                <form action=”mailto:nckmlb@gmail.com”
+                    method=”POST”
+    
+                    enctype=”multipart/form-data”
+    
+                    name=”EmailForm”>
+    
+                    <input class="has-custom-focus style-jxd8avcjinput" type="email" name="ContactAddress" placeholder="Email" maxlength="250">
+                    <br><br>
+                    <textarea name=”ContactComment” class="has-custom-focus style-jxd8ave6textarea" placeholder="Message" rows=”6″ cols=”20″></textarea>
+                    <br><br>
+                    <button class="btn default"><b>S U B M I T</b></button>
+                </form>
+                <!-- <br></br> -->
+                <p style="color: white;">© 2020 by yours truly.</p>
+                <p style="color: white;">Brought to you fresh via BaptistBot.</p>
+            </div>
+            <div class="contactrr">
+                <img src="src/contact_transp.png" style="object-position: left" id="contacter_img">
+            </div>
+        </div>
+    </body>
+    
+</html>
