@@ -308,7 +308,7 @@ h3 span,
 /* Generously donated by Matthew Elwin (read: blatantly stolen. Thank you, Matt!) */
 /* TODO: side nav for projects */
 nav#TOC{
-  width: 21%;
+  width: 15%;
   height: 45%;
   position:fixed!important;
   z-index:1;
@@ -323,17 +323,17 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   color: #06e;
 }
 
 nav a:hover {
   color: #0645ad;
   background: #C3C3DE
-}
+} */
 
 .content{
-  margin-left: 21%;
+  margin-left: 15%;
   padding-left: 4em;
   /* min-height: calc(100vh - 1000px); */
   /* margin-top: 20%; */
