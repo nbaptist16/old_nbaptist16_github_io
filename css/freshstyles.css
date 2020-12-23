@@ -323,9 +323,9 @@ h3 span,
   /* background: #fff; */
   background: black;
   /* border-radius: 30px; */
-  /* margin: 80px auto; */
-  margin: 0 0;
-  /* max-width: 450px; */
+  margin: 80px auto;
+  /* margin: 0 0; */
+  max-width: 450px;
   padding: 10px 30px;	
   }
   .wrapper h3 {
