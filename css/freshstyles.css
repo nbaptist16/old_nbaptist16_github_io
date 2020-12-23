@@ -314,7 +314,7 @@ h3 span,
 
 /* by me :D */
 .fillerup {
-  object-fit: contain;
+  object-fit: scale-down;
 }
 /* --- end */
 
