@@ -307,8 +307,14 @@ h3 span,
 #wide {
   flex: 1;
   /* Grow to rest of container */
-  background: lightgreen;
+  /* background: lightgreen; */
+  background: black;
   /* Just so it's visible */
+}
+
+/* by me :D */
+.fillerup {
+  object-fit: contain;
 }
 /* --- end */
 
