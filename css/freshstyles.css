@@ -227,7 +227,8 @@ h3 span,
   .info {color: dodgerblue;}
   .warning {color: orange;}
   .danger {color: red;}
-  .default {color: #fdbcff;}
+  .default {color: #fdbcff;
+  font-weight: bold;}
 
   .jumbo-bg {
     background-attachment: fixed;  
@@ -258,8 +259,8 @@ h3 span,
 /* added */
 #content {
   /* min-height: calc(100vh - 40px); */
-  /* min-height: calc(100vh - 800px); */
-  min-height: calc(100vh - 1000px);
+  min-height: calc(100vh - 800px);
+  /* min-height: calc(100vh - 1000px); */
 }
 
 #footer {
@@ -280,14 +281,6 @@ h3 span,
 
 /* end */
 
-/* footer {
-  text-align: center;
-  background-color: black;
-  color: white;
-  position: absolute;
-  bottom: 0px;
-} */
-
 #contacter_img {
   /* width: 50%;
   height: calc(auto*50%); */
@@ -299,16 +292,113 @@ h3 span,
   float: right;
 }
 
-#resized_img {
-  width: auto;
-  height: auto;
+/* Added for footer --- */
+#parent {
+  display: flex;
 }
+#narrow {
+  width: 200px;
+  background: lightblue;
+  /* Just so it's visible */
+}
+#wide {
+  flex: 1;
+  /* Grow to rest of container */
+  background: lightgreen;
+  /* Just so it's visible */
+}
+/* --- end */
+
+/* Added for contact form --- */
+* {
+  box-sizing: border-box;
+  }
+  /* body {
+  background: darkslategrey;
+  } */
+  .wrapper {
+  /* background: #fff; */
+  background: black;
+  /* border-radius: 30px; */
+  margin: 80px auto;
+  max-width: 450px;
+  padding: 10px 30px;	
+  }
+  .wrapper h3 {
+  text-align: center;
+  font-family: lato;
+  font-size: 2rem;
+  /* color: deepskyblue; */
+  color: #fdbcff;
+  margin: 30px 0;
+  text-transform: uppercase;
+  }
+  .box {
+  position: relative;
+  margin-bottom: 30px;
+  font-family: lato;
+  }
+  .box input,
+  .box textarea {
+  width: 100%;
+  padding: 12px;
+  }
+  .box input:focus + label,
+  .box input:valid + label,
+  .box textarea:focus + label,
+  .box textarea:valid + label {
+  /* color: deepskyblue; */
+  color: #fdbcff;
+  font-size: 16px;
+  font-weight: bold;
+  top: -10px;
+  }
+  .box input:focus + label:after,
+  .box input:valid + label:after,
+  .box textarea:focus + label:after,
+  .box textarea:valid + label:after {
+  content: ':';
+  }
+  .box textarea {
+  height: 150px;
+  }
+  .wrapper label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #262626;
+  font-size: 12px;
+  /* background: #fff; */
+  background: none;
+  /* background: black; */
+  transition: all .5s ease-in-out;
+  }
+  .wrapper a {
+  text-decoration: none;
+  /* background: deepskyblue; */
+  background: #fdbcff;
+  /* color: #fff; */
+  color: transparent;
+  /* color: black; */
+  display: block;
+  text-align: center;
+  padding: 15px 30px;
+  font-family: lato;
+  font-size: 20px;
+  /* border-radius: 50px; */
+  }
+  /* .forgot-text a {
+  background: transparent;
+  color: #262626;
+  } */
+  
+/* --- end */
 
 
 /* Generously donated by Matthew Elwin (read: blatantly stolen. Thank you, Matt!) */
 /* TODO: side nav for projects */
 nav#TOC{
-  width: 15%;
+  width: 10%;
   height: 45%;
   position:fixed!important;
   z-index:1;
@@ -333,7 +423,7 @@ nav a:hover {
 } */
 
 .content{
-  margin-left: 15%;
+  margin-left: 10%;
   padding-left: 4em;
   /* min-height: calc(100vh - 1000px); */
   /* margin-top: 20%; */
