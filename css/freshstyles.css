@@ -258,8 +258,9 @@ h3 span,
 
 /* added */
 #content {
-  /* min-height: calc(100vh - 40px); */
-  min-height: calc(100vh - 800px);
+  min-height: calc(100vh - 40px);
+  /* min-height: calc(100vh - 800px); */
+  /* min-height: calc(100vh - 800px); */
   /* min-height: calc(100vh - 1000px); */
 }
 
@@ -295,9 +296,10 @@ h3 span,
 /* Added for footer --- */
 #parent {
   display: flex;
+  max-height: 800px;
 }
 #narrow {
-  width: 200px;
+  width: 500px;
   background: lightblue;
   /* Just so it's visible */
 }
