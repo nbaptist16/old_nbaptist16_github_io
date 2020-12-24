@@ -402,6 +402,17 @@ h3 span,
   background: transparent;
   color: #262626;
   } */
+
+  /* added for custom hover glow */
+  .ig {
+    /* width: 185px;
+    height:185px; */
+    display:block;
+    background-image: url('src/ig.png');
+  }
+  .ig:hover {
+    background-image: url('src/igh.png');
+  }
   
 /* --- end */
 
