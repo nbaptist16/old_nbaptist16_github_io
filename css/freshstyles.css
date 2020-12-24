@@ -405,12 +405,9 @@ h3 span,
 
   /* added for custom hover glow */
   .ig {
-    /* width: 185px;
-    height:185px; */
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     display:block;
-    /* background-image: url('/src/ig.png'); */
     background-image: url('ig.png');
   }
   .ig:hover {
