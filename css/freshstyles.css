@@ -407,11 +407,14 @@ h3 span,
   .ig {
     /* width: 185px;
     height:185px; */
+    height: auto;
+    width: auto;
     display:block;
-    background-image: url('src/ig.png');
+    /* background-image: url('/src/ig.png'); */
+    background-image: url('ig.png');
   }
   .ig:hover {
-    background-image: url('src/igh.png');
+    background-image: url('igh.png');
   }
   
 /* --- end */
