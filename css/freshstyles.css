@@ -340,6 +340,13 @@ h3 span,
   flex: 50%;
 }
 
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+/* end flex add */
+
 /* by me :D */
 .fillerup {
   /* object-fit: scale-down; */
