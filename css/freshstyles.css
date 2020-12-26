@@ -324,7 +324,7 @@ h3 span,
 /* flex add */
 .flex-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-size: 30px;
   text-align: center;
 }
@@ -341,11 +341,11 @@ h3 span,
   flex: 50%;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
-}
+} */
 /* end flex add */
 
 /* by me :D */
