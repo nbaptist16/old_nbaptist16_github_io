@@ -300,7 +300,8 @@ h3 span,
   max-height: 600px;
 }
 #narrow {
-  width: 500px;
+  /* width: 500px; */
+  width: 409;
   background: lightblue;
   /* Just so it's visible */
 }
