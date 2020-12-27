@@ -334,14 +334,14 @@ h3 span,
   /* background-color: #f1f1f1; */
   background-color: black;
   padding: 10px;
-  flex: 10%;
+  flex: 19%;
 }
 
 .flex-item-right {
   /* background-color: dodgerblue; */
   background-color: black;
   padding: 10px;
-  flex: 10%;
+  flex: 1%;
 }
 
 .flex-item-bottom {
