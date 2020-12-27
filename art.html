@@ -89,31 +89,48 @@
 
         <p></p>
 
-        <div id="footer">
-            <p>foote</p>
-            <div class="emailformm">
-                <h4><b style="color: white;">Contact</b></h4>
-                <p style=color:white>nckmlb@gmail.com  /  message by coconut</p>
-    
-                <form action=”mailto:nckmlb@gmail.com”
-                    method=”POST”
-    
-                    enctype=”multipart/form-data”
-    
-                    name=”EmailForm”>
-    
-                    <input class="has-custom-focus style-jxd8avcjinput" type="email" name="ContactAddress" placeholder="Email" maxlength="250">
-                    <br><br>
-                    <textarea name=”ContactComment” class="has-custom-focus style-jxd8ave6textarea" placeholder="Message" rows=”6″ cols=”20″></textarea>
-                    <br><br>
-                    <button class="btn default"><b>S U B M I T</b></button>
-                </form>
-                <!-- <br></br> -->
-                <p style="color: white;">© 2020 by yours truly.</p>
-                <p style="color: white;">Brought to you fresh via BaptistBot.</p>
+        <!-- https://stackoverflow.com/questions/446060/css-two-divs-next-to-each-other -->
+        <div id="parent">
+            <div id="narrow">
+                <div class="wrapper">
+                    <!-- https://www.codingflicks.com/2020/09/contact-form-design.html -->
+                    <h3>Contact</h3>
+                    <form action="mailto:nckmlb@gmail.com" method="post" enctype="text/plain">
+                        <p class="box">
+                            <input id="name" type="text" name="name" required="required">
+                            <label for="name">Name</label>
+                        </p>
+                        <p class="box">
+                            <input id="email" type="email" name="emil" required="required">
+                            <label for="email">Email</label>
+                        </p>
+                        <p class="box">
+                            <textarea id="message" name="message" required="required"></textarea>
+                            <label for="message">Message</label>
+                        </p>
+                        <input type="submit" class="btn default" value="S U B M I T">
+                    </form>
+                </div>
+                
             </div>
-            <div class="contactrr">
-                <img src="src/contact_transp.png" style="object-position: left" id="contacter_img">
+            <div id="wide" class="flex-container">
+                <div class="flex-item-left"> </div>
+                <div class="flex-item-bottom">
+                    <center><img src="src/sm_contact.png" width="95%" height="auto" class="va"></center>
+                    <center>
+                        <a href="https://www.linkedin.com/in/nicole-baptist-105a43175/"><img src="src/in.png" width="28px" height="28px"></a>
+                        <a href="https://www.youtube.com/channel/UCZkRKwl5dwA0-_EWymjMdJQ"><img src="src/yt.png" width="28px" height="28px"></a>
+                        <!-- <a href="https://www.instagram.com/nicolpickl/" class="ig"></a> -->
+                        <a href="https://www.instagram.com/nicolpickl/"><img src="src/ig.png" width="28px" height="28px"></a>
+                        <a href="https://github.com/nbaptist16"><img src="src/gh.png" width="28px" height="28px"></a>
+                    </center>
+                    <center>
+                        <small></small>
+                        <p style="color: white;">© 2020 by yours truly.</p>
+                        <p style="color: white;">Brought to you fresh via BaptistBot.</p>
+                    </center>
+                </div>
+                <div class="flex-item-right"> </div>
             </div>
         </div>
     </body>
