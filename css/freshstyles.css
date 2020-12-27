@@ -462,6 +462,21 @@ h3 span,
   
 /* --- end */
 
+/* Added for eng project formatting */
+#leftyimg {
+  width: 200px;
+  /* width: 409; */
+  /* background: lightblue; */
+  /* Just so it's visible */
+}
+#rightytxt {
+  flex: 1;
+  /* Grow to rest of container */
+  /* background: lightgreen; */
+  /* Just so it's visible */
+}
+/* end */
+
 
 /* Generously donated by Matthew Elwin (read: blatantly stolen. Thank you, Matt!) */
 /* TODO: side nav for projects */
