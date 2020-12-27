@@ -332,13 +332,19 @@ h3 span,
 .flex-item-left {
   background-color: #f1f1f1;
   padding: 10px;
-  flex: 50%;
+  flex: 20%;
 }
 
 .flex-item-right {
   background-color: dodgerblue;
   padding: 10px;
-  flex: 50%;
+  flex: 20%;
+}
+
+.flex-item-bottom {
+  background-color: pink;
+  padding: 10px;
+  flex: 60%;
 }
 
 /* @media (max-width: 800px) {
