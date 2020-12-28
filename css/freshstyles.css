@@ -463,6 +463,13 @@ h3 span,
 /* --- end */
 
 /* Added for eng project formatting */
+
+#projz {
+  display: flex;
+  /* max-height: 800px; */
+  /* max-height: 600px; */
+  max-width: 80%;
+}
 #leftyimg {
   width: 250px;
   /* width: 409; */
