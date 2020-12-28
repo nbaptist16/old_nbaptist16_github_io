@@ -491,6 +491,11 @@ h3 span,
 }
 /* end */
 
+#desc {
+  /* max-height: 800px; */
+  /* max-height: 600px; */
+  max-width: 80%;
+}
 
 /* Generously donated by Matthew Elwin (read: blatantly stolen. Thank you, Matt!) */
 /* TODO: side nav for projects */
