@@ -60,15 +60,17 @@
         <small><center>A Sawyer, a Turtlebot3, and a RealSense camera walk into a bar...</center></small>
         <p><br></p>
         <p></p>
-        <h6>Overview:</h6>
-        <p>For our final project in ME495, our team decided we wanted to be able to take a 3D scan of an object and import it into Minecraft. Our solution was to use the Turtlebot3 as a turntable while the RealSense camera (mounted onto the Sawyer arm) would move around the Turtlebot3 and save the necessary views as pointclouds.
-            The captured pointclouds would then be fused together to make a multi-faced (5 by default) pointcloud object saved as a pointcloud data file (pcd), converted to a ply file, and then imported into Minecraft.
-        </p>
-        <h6>Code:</h6>
-        <p>The code can be split into 3 packages: arm_motion, camera_motion, and camera_reconstruct.</p>
-        * <code>arm_motion:</code><p>controls the motion of the arm and the Turtlebot3 to properly position the camera for scanning</p>
-        * <code>camera_motion:</code><p>processes, aligns, and stabilizes images to be published to the <code>camera_reconstruct</code> nodes</p>
-        * <code>camera_reconstruct:</code><p>fuses the received pointclouds and saves the final product as a pcd file</p>
+        <center><div id="projz">
+            <h6>Overview:</h6>
+            <p>For our final project in ME495, our team decided we wanted to be able to take a 3D scan of an object and import it into Minecraft. Our solution was to use the Turtlebot3 as a turntable while the RealSense camera (mounted onto the Sawyer arm) would move around the Turtlebot3 and save the necessary views as pointclouds.
+                The captured pointclouds would then be fused together to make a multi-faced (5 by default) pointcloud object saved as a pointcloud data file (pcd), converted to a ply file, and then imported into Minecraft.
+            </p>
+            <h6>Code:</h6>
+            <p>The code can be split into 3 packages: arm_motion, camera_motion, and camera_reconstruct.</p>
+            * <code>arm_motion:</code><p>controls the motion of the arm and the Turtlebot3 to properly position the camera for scanning</p>
+            * <code>camera_motion:</code><p>processes, aligns, and stabilizes images to be published to the <code>camera_reconstruct</code> nodes</p>
+            * <code>camera_reconstruct:</code><p>fuses the received pointclouds and saves the final product as a pcd file</p>
+        </div></center>
 
         <p></p>
 
