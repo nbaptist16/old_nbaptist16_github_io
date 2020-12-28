@@ -470,6 +470,9 @@ h3 span,
   /* max-height: 600px; */
   max-width: 80%;
 }
+#smoll {
+  width: 100px;
+}
 #leftyimg {
   width: 250px;
   /* width: 409; */
