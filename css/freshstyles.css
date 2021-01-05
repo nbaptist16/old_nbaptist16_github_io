@@ -235,7 +235,8 @@ h3 span,
     /* background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/stadium.jpeg"); */
     background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("jumbo.png");
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: contain;
     color: #fff;
     height: 400px;
   }
@@ -498,7 +499,7 @@ h3 span,
   /*  */
   margin: auto;
   /* width: 60%; */
-  border: 3px solid pink;
+  border: 3px solid #fdbcff;
   padding: 10px;
 }
 
