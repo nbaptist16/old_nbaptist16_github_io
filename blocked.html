@@ -67,7 +67,7 @@
             </p>
             <hr>
             <center><img src="src/ezgif-7-4bdb8e39dff2.gif" width="400px" height="auto"></center>
-            <small>vc: Mr. Li</small>
+            <center><small>vc: Mr. Li</small></center>
             <hr>
             <h6>Code:</h6>
             <p>The code utilizes <b>ROS</b> in <b>Python</b> and <b>C++</b>, and it can be split into 3 packages: arm_motion, camera_motion, and camera_reconstruct.</p>
@@ -79,14 +79,14 @@
                 As seen in the diagram, the code can be run by launching the <code>arm.launch</code> file, which includes other necessary files across the three packages.
             </p>
             <hr>
-            <img src="src/blocked.png">
+            <img src="src/blocked.png" width="600px" height="auto">
             <p>
                 The arm_motion directory contains the turntable and scanner_arm nodes, which control the turtlebot and sawyer arm, respectively. The default positions allow for a total of 5 individual pointclouds to be captured: the front, back, sides, and top of the object.
             </p>
             <p>
                 This is done by rotating the object on the center of the turtlebot a specified number of times per call while the camera face is perpendicular to the desired face and approximately 50 or so cm away. After the turtle rotates a third time, the sawyer arm moves the camera so that it is facing the top of the object for the final individual pointcloud.
             </p>
-            <center><img src="src/turntable_dg.png"><img src="src/scanner_arm_dg.png"></center>
+            <center><img src="src/turntable_dg.png" width="350px" height="auto"><img src="src/scanner_arm_dg.png" width="350px" height="auto"></center>
             <!-- <center><img src="src/scanner_arm_dg.png"></center> -->
             <p>
                 The camera_motion directory aligns the center of the depth camera with the scanning object by publishing the depth value of the center pixel via find_depth node. It also stabilizes the depth values with the camera_motion python library to ensure the quality of the pointclouds are up to par.
@@ -94,7 +94,7 @@
             <p>
                 Finally, the previously mentioned nodes call nodes in the camera_reconstruct directory, generate_pc and fuse_pc. These two nodes receive the continuous stream of pointclouds from the realsense camera and combine each view one-by-one as the pointclouds are transformed to move with the turtlebot, producing a single pointcloud data (or pcd) file per run. This way, the user can choose the views that they want saved (by calling the save_pc service) and will not have to filter through a folder full of pointclouds.
             </p>
-            <center><img src="src/camera_reconstruct_dg.png"></center>
+            <center><img src="src/camera_reconstruct_dg.png" width="600px" height="auto"></center>
             <small>
                 Note: also included are two tests for the pointcloud fusion pipeline and the smoothing functions, <code>arm_motion/test/turntable.test</code> and <code>camera_motion/test/smoothing_test.py</code>
             </small>
@@ -103,11 +103,11 @@
                 <br>
                 Although the results of the above method resulted in a multi-faced pointcloud, the images did not line up as intended. Since the issue was in the turtlebot's movement, this issue was addressed with SLAM.
             </p>
-            <center><img src="src/slam_dg.png"></center>
+            <center><img src="src/slam_dg.png" width="600px" height="auto"></center>
             <p>
                 In the <code>left</code> image below of the windex bottle, one can see the resulting pointcloud without SLAM. On the <code>right</code> is the pointcloud produced with SLAM of a clorox container. From these two images, it is clear that the addition of SLAM to the operation benefitted the overall accuracy of the model.
             </p>
-            <center><img src="src/windexx.gif"> <img src="src/cloroxx.gif"></center>
+            <center><img src="src/windexx.gif" width="350px" height="auto"> <img src="src/cloroxx.gif" width="350px" height="auto"></center>
             
             
         </div>

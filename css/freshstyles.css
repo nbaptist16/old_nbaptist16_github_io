@@ -232,7 +232,8 @@ h3 span,
 
   .jumbo-bg {
     background-attachment: fixed;  
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/stadium.jpeg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/stadium.jpeg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("jumbo.png");
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -244,6 +245,7 @@ h3 span,
     background-image: none;
     border-color: #f8f9fa;
     color: #f8f9fa;
+    src: url("eng.html");
   }
   
   .btn-jumbo:hover {
