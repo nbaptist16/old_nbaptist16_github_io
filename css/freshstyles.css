@@ -466,7 +466,6 @@ h3 span,
 /* --- end */
 
 /* Added for eng project formatting */
-
 #projz {
   display: flex;
   /* max-height: 800px; */
@@ -492,16 +491,96 @@ h3 span,
   margin: auto;
   background-color: seashell;
 }
-/* end */
+
+
+/* v2 */
+#feat {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
 
 #desc {
   max-width: 80%;
-  /*  */
   margin: auto;
-  /* width: 60%; */
   border: 3px solid #fdbcff;
   padding: 10px;
 }
+
+/* maybe maybe maybe */
+#feat div {
+  -ms-flex: 1;
+  flex: 1;
+  /* text-align: center; */
+}
+
+.feet-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feet-desc {
+  border: 1px solid grey;
+  background-color: white;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+}
+
+.feet-extras {
+  align-items: center;
+  /* border: 1px solid grey;
+  border-top-width: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  position: relative;
+}
+
+.feet-link {
+  display: flex;
+  margin-left: 30px;
+}
+
+.feet-link svg {
+  margin-left: 10px;
+  width: 15px;
+}
+
+.linkz {
+  align-items: center;
+  display: flex;
+}
+
+.linkz a {
+  display: flex;
+  margin: 0 5px;
+}
+
+.linkz svg {
+  width: 20px;
+}
+
+/* .feet-keys {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px 0;
+  width: 85%;
+
+  border: 1px solid grey;
+  border-radius: 2px;
+} */
+
+p.feet-keys:hover {
+  border: 1px solid grey;
+  text-shadow: #fdbcff;
+  border-radius: 2px;
+  text-shadow: 2px 2px #fdbcff;
+}
+
+/* end */
 
 /* Generously donated by Matthew Elwin (read: blatantly stolen. Thank you, Matt!) */
 /* TODO: side nav for projects */
