@@ -301,6 +301,7 @@ h3 span,
   display: flex;
   /* max-height: 800px; */
   max-height: 600px;
+  width: ;
 }
 #narrow {
   width: 500px;
@@ -310,6 +311,27 @@ h3 span,
   /* Just so it's visible */
 }
 #wide {
+  flex: 1;
+  /* Grow to rest of container */
+  /* background: lightgreen; */
+  background: black;
+  /* Just so it's visible */
+}
+
+/* reduced footer for project pages */
+#parentsm {
+  display: flex;
+  /* max-height: 800px; */
+  max-height: 600px;
+}
+#narrowsm {
+  width: 500px;
+  /* width: 409; */
+  /* background: lightblue; */
+  background: black;
+  /* Just so it's visible */
+}
+#widesm {
   flex: 1;
   /* Grow to rest of container */
   /* background: lightgreen; */

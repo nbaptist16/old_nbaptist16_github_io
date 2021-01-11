@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eng | NB</title>
+        <!--style shit-->
+        <link href="css/freshstyles.css" rel="stylesheet">
+        <link href="css/fresherstyles.css" rel="stylesheet">
+        <link rel="shortcut icon" href="/src/favicon.png">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- bootstrap.min.css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <!-- main.css -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- font-awesome.min.css -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Lato fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/futura.css">
+        <link rel="stylesheet" href="css/lulo-clean.css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <!--<a class="navbar-brand" href="#">-->
+                <a class="navbar-brand">
+                    <img src="src/copee-a2z-1_xsmall.png" alt="Header Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#home">HOME</a> -->
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#art">ART</a> -->
+                            <a class="nav-link" href="art.html">ART</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#zeng">(Z)ENGINEERING</a> -->
+                            <a class="nav-link" href="eng.html">(Z)ENGINEERING</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="sidenav">
+            <!-- <video controls width="280" height="auto" style="padding: 10px 50px 10px 20px;"> -->
+            <video controls width="280" height="auto" style="margin-top: 100px; padding-left: 10px;">
+                <source src="src/495double_octopus.mp4" type="video/mp4" width="500" height="auto">
+                <source src="src/495double_octopus.mp4" width="280" height="auto">
+            </video>
+            <p>
+                <br>
+                <br>
+            </p>
+            <center><h6 style="color: yellow; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Skills Used</h6></center>
+            <div id="feat" style="flex-wrap: wrap; margin-top: 15px;">
+                <p class="feet-keys" style="padding: 5px; text-align: center;">ROS</p>
+                <p class="feet-keys" style="padding: 5px; text-align: center;">Python</p>
+                <p class="feet-keys" style="padding: 5px; text-align: center;">C++</p>
+                <p class="feet-keys" style="padding: 5px; text-align: center;">Moveit</p>
+                <p class="feet-keys" style="padding: 5px; text-align: center;">SLAM</p>
+            </div>
+            <p>
+                <br>
+            </p>
+            <center><h6 style="color: yellow; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Additional Info</h6></center>
+            <center>
+                <!-- <a href="https://www.linkedin.com/in/nicole-baptist-105a43175/"><img src="src/inh.png" width="28px" height="28px"></a> -->
+                <!-- <a href="https://www.youtube.com/channel/UCZkRKwl5dwA0-_EWymjMdJQ"><img src="src/yth.png" width="28px" height="28px"></a> -->
+                <!-- <a href="https://www.instagram.com/nicolpickl/" class="ig"></a> -->
+                <!-- <a href="https://www.instagram.com/nicolpickl/"><img src="src/igh.png" width="28px" height="28px"></a> -->
+                <a href="https://github.com/nbaptist16/final-project-blocked"><img src="src/ghh.png" width="28px" height="28px"></a>
+            </center>
+        </div>
+
+        <div class="main">
+            <br>
+            <hr>
+            <br>
+            <br>
+            <h5><center>eng/#Blocked</center></h5>
+            <small><center>A Sawyer, a Turtlebot3, and a RealSense camera walk into a bar...</center></small>
+            <p><br></p>
+            <p></p>
+            <h6>Overview:</h6>
+            <p>For our final project in ME495, our team decided we wanted to take a 3D scan of an object and import it into Minecraft. Our solution was to use the Turtlebot3 as a turntable while the RealSense camera (mounted onto the Sawyer arm) would move around the Turtlebot3 and save the necessary views as pointclouds.
+                The captured pointclouds would then be fused together to make a multi-faced (5 by default) pointcloud object which would be saved as a pointcloud data file (pcd), converted to a ply file, and then imported into Minecraft.
+            </p>
+            <hr>
+            <center><img src="src/ezgif-7-4bdb8e39dff2.gif" width="400px" height="auto"></center>
+            <center><small>vc: Mr. Li</small></center>
+            <hr>
+            <h6>Code:</h6>
+            <p>The code utilizes <b>ROS</b> in <b>Python</b> and <b>C++</b>, and it can be split into 3 packages: arm_motion, camera_motion, and camera_reconstruct.</p>
+            * <code>arm_motion:</code><p>controls the motion of the arm and the Turtlebot3 to properly position the camera for scanning</p>
+            * <code>camera_motion:</code><p>processes, aligns, and stabilizes images to be published to the <code>camera_reconstruct</code> nodes</p>
+            * <code>camera_reconstruct:</code><p>fuses the received pointclouds and saves the final product as a pcd file</p>
+            <center><img src="src/run_start_dg.png" width="600px" height="auto"></center>
+            <p>
+                As seen in the diagram, the code can be run by launching the <code>arm.launch</code> file, which includes other necessary files across the three packages.
+            </p>
+            <hr>
+            <center><img src="src/blocked.png" width="350px" height="auto"></center>
+            <p>
+                The arm_motion directory contains the turntable and scanner_arm nodes, which control the turtlebot and sawyer arm, respectively. The default positions allow for a total of 5 individual pointclouds to be captured: the front, back, sides, and top of the object.
+            </p>
+            <p>
+                This is done by rotating the object on the center of the turtlebot a specified number of times per call while the camera face is perpendicular to the desired face and approximately 50 or so cm away. After the turtle rotates a third time, the sawyer arm moves the camera so that it is facing the top of the object for the final individual pointcloud.
+            </p>
+            <center><img src="src/turntable_dg.png" width="350px" height="auto"><img src="src/scanner_arm_dg.png" width="350px" height="auto"></center>
+            <!-- <center><img src="src/scanner_arm_dg.png"></center> -->
+            <p>
+                The camera_motion directory aligns the center of the depth camera with the scanning object by publishing the depth value of the center pixel via find_depth node. It also stabilizes the depth values with the camera_motion python library to ensure the quality of the pointclouds are up to par.
+            </p>
+            <p>
+                Finally, the previously mentioned nodes call nodes in the camera_reconstruct directory, generate_pc and fuse_pc. These two nodes receive the continuous stream of pointclouds from the realsense camera and combine each view one-by-one as the pointclouds are transformed to move with the turtlebot, producing a single pointcloud data (or pcd) file per run. This way, the user can choose the views that they want saved (by calling the save_pc service) and will not have to filter through a folder full of pointclouds.
+            </p>
+            <center><img src="src/camera_reconstruct_dg.png" width="600px" height="auto"></center>
+            <small>
+                Note: also included are two tests for the pointcloud fusion pipeline and the smoothing functions, <code>arm_motion/test/turntable.test</code> and <code>camera_motion/test/smoothing_test.py</code>
+            </small>
+
+            <p>
+                <br>
+                Although the results of the above method resulted in a multi-faced pointcloud, the images did not line up as intended. Since the issue was in the turtlebot's movement, this issue was addressed with SLAM.
+            </p>
+            <center><img src="src/slam_dg.png" width="600px" height="auto"></center>
+            <p>
+                In the <code>left</code> image below of the windex bottle, one can see the resulting pointcloud without SLAM. On the <code>right</code> is the pointcloud produced with SLAM of a clorox container. From these two images, it is clear that the addition of SLAM to the operation benefitted the overall accuracy of the model.
+            </p>
+            <center><img src="src/windexx.gif" width="350px" height="auto"> <img src="src/cloroxx.gif" width="350px" height="auto"></center>
+            
+        </div>
+
+        <!-- https://stackoverflow.com/questions/446060/css-two-divs-next-to-each-other -->
+        <div id="parentsm" style="background-color: black;">
+            <!-- <div id="narrowsm">
+                <div class="wrapper">
+                    <h3>Contact</h3>
+                    <form action="mailto:nckmlb@gmail.com" method="post" enctype="text/plain">
+                        <p class="box">
+                            <input id="name" type="text" name="name" required="required">
+                            <label for="name">Name</label>
+                        </p>
+                        <p class="box">
+                            <input id="email" type="email" name="emil" required="required">
+                            <label for="email">Email</label>
+                        </p>
+                        <p class="box">
+                            <textarea id="message" name="message" required="required"></textarea>
+                            <label for="message">Message</label>
+                        </p>
+                        <input type="submit" class="btn default" value="S U B M I T">
+                    </form>
+                </div>
+                
+            </div> -->
+            <div id="widesm" class="flex-container" style="margin-left: 300px;">
+                <div class="flex-item-left"> </div>
+                <div class="flex-item-bottom">
+                    <center><img src="src/sm_contact.png" width="95%" height="auto" class="va"></center>
+                    <center>
+                        <a href="https://www.linkedin.com/in/nicole-baptist-105a43175/"><img src="src/in.png" width="28px" height="28px"></a>
+                        <a href="https://www.youtube.com/channel/UCZkRKwl5dwA0-_EWymjMdJQ"><img src="src/yt.png" width="28px" height="28px"></a>
+                        <!-- <a href="https://www.instagram.com/nicolpickl/" class="ig"></a> -->
+                        <a href="https://www.instagram.com/nicolpickl/"><img src="src/ig.png" width="28px" height="28px"></a>
+                        <a href="https://github.com/nbaptist16"><img src="src/gh.png" width="28px" height="28px"></a>
+                    </center>
+                    <center>
+                        <small></small>
+                        <p style="color: white;">© 2020 by yours truly.</p>
+                        <p style="color: white;">Brought to you fresh via BaptistBot.</p>
+                    </center>
+                </div>
+                <div class="flex-item-right"> </div>
+            </div>
+        </div>
+    </body>
+    
+</html>

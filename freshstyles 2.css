@@ -1,0 +1,643 @@
+/*
+.google_map{
+    width:55%;
+    margin-right:2%;
+    float: left;
+}
+.google_map iframe{
+   width:100%;
+}
+.paragraph {
+    width:42%;
+    float: left;
+}
+.clearfix{
+    clear:both
+}
+*/
+
+/*
+ //Add a black background color to the top navigation
+ .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  // Style the links inside the navigation bar 
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  // Add an active class to highlight the current page 
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  // Hide the link that should open and close the topnav on small screens 
+  .topnav .icon {
+    display: none;
+  }
+  
+  // Dropdown container - needed to position the dropdown content 
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  // Style the dropdown button to fit inside the topnav 
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  // Style the dropdown content (hidden by default) 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  // Style the links inside the dropdown 
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  // Add a dark background on topnav links and the dropdown button on hover 
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+  // Add a grey background to dropdown links on hover 
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  // Show the dropdown menu when the user moves the mouse over the dropdown button 
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  // When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  // The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) 
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  } 
+
+  NAV BORDER BOTTOM OG #044da1
+
+  OG BUTTON:OVER COLOR: #eee
+
+/* https://github.com/eneax/doosan-baseball/blob/master/assets/css/main.css*/
+
+
+/*font stuff*/
+@font-face {
+    font-family: "Futura";
+    /*src: url("../fonts/flaticon/font/Flaticon.eot");*/
+    src: url("/home/nckmlb/gitsite/fonts/futura/futur.ttf");
+    src: url("../fonts/flaticon/font/Flaticon.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/flaticon/font/Flaticon.woff") format("woff"),
+         url("../fonts/flaticon/font/Flaticon.ttf") format("truetype"),
+         url("../fonts/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: "Flaticon";
+      src: url("../fonts/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+    }
+  }
+
+nav {
+    background-color: #fff;
+    border-bottom: 3px solid #fdbcff;
+    font-weight: 700;
+}
+
+hr { background-color: #009ed9; }
+
+h2, h3, h4 { font-weight: 700; }
+
+h2,
+h3,
+span,
+.collapse .navbar-nav a.nav-link:link,
+.collapse .navbar-nav a.nav-link:visited {
+  color: #044da1;
+}
+
+h4,
+h3 span,
+.collapse .navbar-nav a.nav-link:hover,
+.collapse .navbar-nav a.nav-link:active {
+  color: #009ed9;
+}
+
+
+.tab {
+    margin-left: 40px;
+}
+
+.emailformm{
+    width:33%;
+    margin-right: 2%;
+    float: left;
+}
+
+.contactrr{
+    width: 65%;
+    float: left;
+}
+
+.clearfix{
+    clear:both
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .btn:hover {
+      background: #eee;
+    }
+
+.default:hover{
+    background: black;
+    color: #5a51d8;
+}
+  
+  .success {color: green;}
+  .info {color: dodgerblue;}
+  .warning {color: orange;}
+  .danger {color: red;}
+  .default {color: #fdbcff;
+  font-weight: bold;}
+
+  .jumbo-bg {
+    background-attachment: fixed;  
+    /* background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/stadium.jpeg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("jumbo.png");
+    background-position: center;
+    /* background-size: cover; */
+    background-size: contain;
+    color: #fff;
+    height: 400px;
+  }
+  
+  .btn-jumbo {
+    background-color: transparent;
+    background-image: none;
+    border-color: #f8f9fa;
+    color: #f8f9fa;
+    src: url("eng.html");
+  }
+  
+  .btn-jumbo:hover {
+    background-color: rgba(4, 77, 161, .5);
+    color: #f8f9fa;
+  }
+
+/* html, body {
+  margin: 0;
+  padding: 0;
+} */
+
+/* added */
+#content {
+  min-height: calc(100vh - 40px);
+  /* min-height: calc(100vh - 800px); */
+  /* min-height: calc(100vh - 800px); */
+  /* min-height: calc(100vh - 1000px); */
+}
+
+#footer {
+  /* height: 0px; */
+  /* height: 800px; */
+  height: 700px;
+  background-color: black;
+  background: black;
+  color: black;
+  text-align: center;
+  overflow: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 80px 200px auto 40px;
+}
+
+/* end */
+
+#contacter_img {
+  /* width: 50%;
+  height: calc(auto*50%); */
+  width: 80%;
+  /* height: calc(auto*80%); */
+  height: 80%;
+  padding-left: 0%;
+  /* bottom: 0px; */
+  float: right;
+}
+
+/* Added for footer --- */
+#parent {
+  display: flex;
+  /* max-height: 800px; */
+  max-height: 600px;
+}
+#narrow {
+  width: 500px;
+  /* width: 409; */
+  /* background: lightblue; */
+  background: black;
+  /* Just so it's visible */
+}
+#wide {
+  flex: 1;
+  /* Grow to rest of container */
+  /* background: lightgreen; */
+  background: black;
+  /* Just so it's visible */
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* flex add */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  /* background-color: #f1f1f1; */
+  background-color: black;
+  padding: 10px;
+  flex: 19%;
+}
+
+.flex-item-right {
+  /* background-color: dodgerblue; */
+  background-color: black;
+  padding: 10px;
+  flex: 1%;
+}
+
+.flex-item-bottom {
+  /* background-color: pink; */
+  background-color: black;
+  padding: 10px;
+  flex: 80%;
+}
+
+/* @media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+} */
+/* end flex add */
+
+/* by me :D */
+.fillerup {
+  /* object-fit: scale-down; */
+  object-fit: contain;
+}
+/* --- end */
+
+/* Added for contact form --- */
+* {
+  box-sizing: border-box;
+  }
+  /* body {
+  background: darkslategrey;
+  } */
+  .wrapper {
+  /* background: #fff; */
+  background: black;
+  /* border-radius: 30px; */
+  /* margin: 80px auto; */
+  margin: 0 0;
+  max-width: 450px;
+  padding: 10px 30px;	
+  }
+  .wrapper h3 {
+  text-align: center;
+  font-family: lato;
+  font-size: 2rem;
+  /* color: deepskyblue; */
+  color: #fdbcff;
+  margin: 30px 0;
+  text-transform: uppercase;
+  }
+  .box {
+  position: relative;
+  margin-bottom: 30px;
+  font-family: lato;
+  }
+  .box input,
+  .box textarea {
+  width: 100%;
+  padding: 12px;
+  }
+  .box input:focus + label,
+  .box input:valid + label,
+  .box textarea:focus + label,
+  .box textarea:valid + label {
+  /* color: deepskyblue; */
+  color: #fdbcff;
+  font-size: 16px;
+  font-weight: bold;
+  top: -10px;
+  }
+  .box input:focus + label:after,
+  .box input:valid + label:after,
+  .box textarea:focus + label:after,
+  .box textarea:valid + label:after {
+  content: ':';
+  }
+  .box textarea {
+  height: 150px;
+  }
+  .wrapper label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #262626;
+  font-size: 12px;
+  /* background: #fff; */
+  background: none;
+  /* background: black; */
+  transition: all .5s ease-in-out;
+  }
+  .wrapper a {
+  text-decoration: none;
+  /* background: deepskyblue; */
+  background: #fdbcff;
+  /* color: #fff; */
+  color: transparent;
+  /* color: black; */
+  display: block;
+  text-align: center;
+  padding: 15px 30px;
+  font-family: lato;
+  font-size: 20px;
+  /* border-radius: 50px; */
+  }
+  /* .forgot-text a {
+  background: transparent;
+  color: #262626;
+  } */
+
+  /* added for custom hover glow */
+  .ig {
+    height: 56px;
+    width: 56px;
+    display:block;
+    background-image: url('ig.png');
+  }
+  .ig:hover {
+    background-image: url('igh.png');
+  }
+  
+/* --- end */
+
+/* Added for eng project formatting */
+#projz {
+  display: flex;
+  /* max-height: 800px; */
+  /* max-height: 600px; */
+  max-width: 80%;
+}
+#smoll {
+  width: 200px;
+}
+#leftyimg {
+  width: 300px;
+  /* width: 409; */
+  /* background: lightblue; */
+  /* Just so it's visible */
+}
+#rightytxt {
+  flex: 1;
+  /* Grow to rest of container */
+  /* background: lightgreen; */
+  /* Just so it's visible */
+  padding: 5px;
+  /* vertical-align: middle; */
+  margin: auto;
+  background-color: seashell;
+}
+
+
+/* v2 */
+#feat {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+#desc {
+  max-width: 80%;
+  margin: auto;
+  border: 3px solid #fdbcff;
+  padding: 10px;
+}
+
+/* maybe maybe maybe */
+#feat div {
+  -ms-flex: 1;
+  flex: 1;
+  /* text-align: center; */
+}
+
+.feet-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feet-desc {
+  border: 1px solid grey;
+  background-color: white;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+}
+
+.feet-extras {
+  align-items: center;
+  /* border: 1px solid grey;
+  border-top-width: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  position: relative;
+}
+
+.feet-link {
+  display: flex;
+  margin-left: 30px;
+}
+
+.feet-link svg {
+  margin-left: 10px;
+  width: 15px;
+}
+
+.linkz {
+  align-items: center;
+  display: flex;
+}
+
+.linkz a {
+  display: flex;
+  margin: 0 5px;
+}
+
+.linkz svg {
+  width: 20px;
+}
+
+/* .feet-keys {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px 0;
+  width: 85%;
+
+  border: 1px solid grey;
+  border-radius: 2px;
+} */
+
+p.feet-keys:hover {
+  border: 1px solid grey;
+  text-shadow: #fdbcff;
+  border-radius: 2px;
+  text-shadow: 2px 2px #fdbcff;
+}
+
+/* end */
+
+/* Generously donated by Matthew Elwin (read: blatantly stolen. Thank you, Matt!) */
+/* TODO: side nav for projects */
+nav#TOC{
+  width: 10%;
+  height: 45%;
+  position:fixed!important;
+  z-index:1;
+  overflow:auto;
+  padding-right: 0em;
+  font-size: 7pt;
+  background-color: transparent;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+/* a:hover {
+  color: #06e;
+}
+
+nav a:hover {
+  color: #0645ad;
+  background: #C3C3DE
+} */
+
+.content{
+  margin-left: 10%;
+  padding-left: 4em;
+  /* min-height: calc(100vh - 1000px); */
+  /* margin-top: 20%; */
+}
+
+.inner{
+  margin: 0 auto;
+  min-width: 30em;
+  max-width: 50em;
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 2em;
+}
+
+li > ul, li > ol {
+    margin: 0 0;
+}
+
+nav ul, nav ol {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+
+/* make the top level list item in table of contents not indent*/
+nav li > ul, nav li > ol {
+    list-style: none;
+    padding: 0 0 0 2em;
+}
