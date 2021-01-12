@@ -4,6 +4,7 @@
         <title>Eng | NB</title>
         <!--style shit-->
         <link href="css/freshstyles.css" rel="stylesheet">
+        <link href="css/fresherstyles.css" rel="stylesheet">
         <link rel="shortcut icon" href="/src/favicon.png">
         
         <meta charset="utf-8">
@@ -52,15 +53,37 @@
                 </div>
             </div>
         </nav>
-        <br>
-        <hr>
-        <br>
-        <br>
-        <h5><center>eng/Jumping Jack</center></h5>
-        <small><center>*Tom Petty voice* FREE! FALLIN!</center></small>
-        <p><br></p>
-        <p></p>
-        <div id="desc">
+        
+        <div class="sidenav">
+            <video controls width="280" height="auto" style="margin-top: 90px; padding-left: 15px;">
+                <source src="src/freefallin_copy.mp4" type="video/mp4" width="500" height="auto">
+                <source src="src/freefallin_copy.mp4" width="280" height="auto">
+            </video>
+
+            <center><h6 style="margin-top: 10px; color: yellow; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Skills Used</h6></center>
+            <!-- <div id="feat" style="flex-wrap: wrap; margin-top: 15px; text-align: center;">
+                <p class="feet-keys" style="padding: 5px; text-align: center; font-size: 12px; border: none;">Python</p>
+            </div> -->
+            <p class="feet-keys" style="margin-top: 15px; padding: 5px; text-align: center; font-size: 12px; border: none;">Python</p>
+            <center><h6 style="color: yellow; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Additional Info</h6></center>
+            <center>
+                <!-- <a href="https://www.linkedin.com/in/nicole-baptist-105a43175/"><img src="src/inh.png" width="28px" height="28px"></a> -->
+                <!-- <a href="https://www.youtube.com/channel/UCZkRKwl5dwA0-_EWymjMdJQ"><img src="src/yth.png" width="28px" height="28px"></a> -->
+                <!-- <a href="https://www.instagram.com/nicolpickl/" class="ig"></a> -->
+                <!-- <a href="https://www.instagram.com/nicolpickl/"><img src="src/igh.png" width="28px" height="28px"></a> -->
+                <a href="https://www.youtube.com/watch?v=PIuAFrLeXfY"><img src="src/yth.png" width="28px" height="28px"></a>
+            </center>
+        </div>
+
+        <div class="main">
+            <br>
+            <hr>
+            <br>
+            <br>
+            <h5><center>eng/Jumping Jack</center></h5>
+            <small><center>*Tom Petty voice* FREE! FALLIN!</center></small>
+            <p><br></p>
+            <p></p>
             <h6>Overview:</h6>
             <p>
                 The final project for <code>Theory of Machine Dynamics</code> that utilized Lagrangian dynamics to model and animate a chosen system.
@@ -78,55 +101,84 @@
             </p>
             <hr>
             <h6>Code:</h6>
-            <p>The code utilizes <b>Python</b>, and it can be split into 3 packages: arm_motion, camera_motion, and camera_reconstruct.</p>
-            * <code>arm_motion:</code><p>controls the motion of the arm and the Turtlebot3 to properly position the camera for scanning</p>
-            * <code>camera_motion:</code><p>processes, aligns, and stabilizes images to be published to the <code>camera_reconstruct</code> nodes</p>
-            * <code>camera_reconstruct:</code><p>fuses the received pointclouds and saves the final product as a pcd file</p>
-            <center><img src="src/eleqs.png" width="600px" height="auto"></center>
+            <p>The code is written exclusively in <b>Python</b> and requires the following packages:</p>
+            <p>* <code>math:</code> used to calculate quantities with pi</p>
+            <p>* <code>matplotlib.pyplot:</code> used to plot the trajectories of the box and jack over time</p>
+            <p>* <code>numpy:</code> used to perform matrix math calculations</p>
+            <p>* <code>plotly.graph_objects:</code> used in animation function for markers</p>
+            <p>* <code>sympy:</code><br>
+                &emsp; used <i>Function</i> and <i>symbols</i> to define variables and dummy variables<br>
+                &emsp; used <i>sin</i>, <i>cos</i>, <i>lambdify</i>, <i>Matrix</i>, <i>Eq</i>, and <i>solve</i> for mathematical calculations<br>
+                &emsp; used <i>simplify</i> to expedite computations
+            </p>
             <p>
-                As seen in the diagram, the code can be run by launching the <code>arm.launch</code> file, which includes other necessary files across the three packages.
+                * <code>plotly.offline:</code> used <i>init_notebook_mode</i> and <i>iplot</i> for animation function
+            </p>
+            <p>
+                * <code>IPython.display:</code> used <i>display</i> and <i>HTML</i> for animation function
+            </p>
+            <p>
+                * <code>IPython.core.display:</code> used <i>HTML</i> to display reference diagrams<br>
             </p>
             <hr>
-            <center><img src="src/blocked.png" width="350px" height="auto"></center>
+            <h6>Calculations:</h6>
             <p>
-                The arm_motion directory contains the turntable and scanner_arm nodes, which control the turtlebot and sawyer arm, respectively. The default positions allow for a total of 5 individual pointclouds to be captured: the front, back, sides, and top of the object.
+                <code>Initialization:</code><br>
+                Initialized the following parameters:<br>
+                <small>
+                    &emsp; g = 9.8 (gravity) &ensp; lb = 5 (length of box side) &ensp; mb = 10 (mass of box) &ensp; lj = 1 (length of jack) &ensp; mj = 1 (mass of jack)<br>
+                    <b>(functions</b>, inc. derivatives<b>)</b><br>
+                    &emsp; xb = x_box &ensp; yb = y_box &ensp; thetab = theta_box &ensp; xj = x_jack &ensp; yj = y_jack &ensp; thetaj = theta_jack &ensp; q = all parameters
+                </small> 
             </p>
             <p>
-                This is done by rotating the object on the center of the turtlebot a specified number of times per call while the camera face is perpendicular to the desired face and approximately 50 or so cm away. After the turtle rotates a third time, the sawyer arm moves the camera so that it is facing the top of the object for the final individual pointcloud.
-            </p>
-            <center><img src="src/turntable_dg.png" width="350px" height="auto"><img src="src/scanner_arm_dg.png" width="350px" height="auto"></center>
-            <!-- <center><img src="src/scanner_arm_dg.png"></center> -->
-            <p>
-                The camera_motion directory aligns the center of the depth camera with the scanning object by publishing the depth value of the center pixel via find_depth node. It also stabilizes the depth values with the camera_motion python library to ensure the quality of the pointclouds are up to par.
-            </p>
-            <p>
-                Finally, the previously mentioned nodes call nodes in the camera_reconstruct directory, generate_pc and fuse_pc. These two nodes receive the continuous stream of pointclouds from the realsense camera and combine each view one-by-one as the pointclouds are transformed to move with the turtlebot, producing a single pointcloud data (or pcd) file per run. This way, the user can choose the views that they want saved (by calling the save_pc service) and will not have to filter through a folder full of pointclouds.
-            </p>
-            <center><img src="src/camera_reconstruct_dg.png" width="600px" height="auto"></center>
-            <small>
-                Note: also included are two tests for the pointcloud fusion pipeline and the smoothing functions, <code>arm_motion/test/turntable.test</code> and <code>camera_motion/test/smoothing_test.py</code>
-            </small>
-
-            <p>
+                <code>Euler-Lagrange equations:</code><br>
+                Firstly, the Lagrangian was calculated with the equation:
+                <center><img src="src/lag.png" width="400px" height="auto"></center>
+                to get the following result:
+                <small></small>
+                <center><img src="src/actual_lag.png" width="500px" height="auto"></center>
                 <br>
-                Although the results of the above method resulted in a multi-faced pointcloud, the images did not line up as intended. Since the issue was in the turtlebot's movement, this issue was addressed with SLAM.
+                The calculate Lagrangian was then used in the eqation:
+                <center><img src="src/elform.png" width="350px" height="auto"></center>
+                to get the Euler-Lagrange equations and solutions:
+                <center><img src="src/eleqs.png" width="400px" height="auto"></center>
             </p>
-            <center><img src="src/slam_dg.png" width="600px" height="auto"></center>
             <p>
-                In the <code>left</code> image below of the windex bottle, one can see the resulting pointcloud without SLAM. On the <code>right</code> is the pointcloud produced with SLAM of a clorox container. From these two images, it is clear that the addition of SLAM to the operation benefitted the overall accuracy of the model.
+                <code>System constraints:</code><br>
+                The constraints of this system are that the jack masses cannot leave the box, and will instead experience elastic impact with the walls (they will bounce). The external forces affect the y-coordinate of the box to keep it from falling straight off of the plot. To be completely honest, I wanted it to be [42 x gravity] for personal reasons, but that made the impacts too close together and freaked the system out. I settled for a close 41.
             </p>
-            <center><img src="src/windexx.gif" width="350px" height="auto"> <img src="src/cloroxx.gif" width="350px" height="auto"></center>
-            
-            
-        </div>
+            <p>
+                <code>External forces:</code><br>
+                The external force is written as: <code><code>f = sym.Matrix([0, 41*g, 0, 0, 0, 0])</code></code>
+            </p>
+            <p>
+                <code>Impact update laws:</code><br>
+                The impact updates for momentum and energy are calculated with the following equations:
+                <center><img src="src/updoots.png" width="350px" height="auto"></center>
+            </p>
+            <hr>
+            <h6>Results:</h6>
+            <p>
+                In the simulation, the box spins counter-clockwise and the jack simply falls (as defined in s0).
+                When the jack impacts the box, they both begin to fall since the jack exerts a force on the box.
+                The simulation ends with the jack and box barely remaining within the initial world frame.
+                This (hopefully) is correct since the jack is set to fall (but is much lighter than that of the box), but it still exerts enough force on the box to knock it downward.<br>
+                <small style="color: white;">As you can tell, I've taken a whole semester-long course in pedagogy and am a trained professional at explaining things (but only to people who think exactly the way I do).<br></small>
+                <center><img src="src/trajic.png" width="350px" height="auto"></center>
+            </p>
+            <hr>
+            <h6>Acknowledgements:</h6>
+            <p>
+                Huge thank you to the teaching staff, my bffs, Professor T. Murphey (there's an e in there!), soon-to-be Professor K. Fitzsimons, C. Porter, and MC. Sun :)<br>
+                Special thanks also to all the people brave enough to ask questions during office hours and my coding friends who taught me to organize my thoughts.
+            </p>
 
-        <p></p>
-
+            
         <!-- https://stackoverflow.com/questions/446060/css-two-divs-next-to-each-other -->
-        <div id="parent">
-            <div id="narrow">
+        <div id="parentsm" style="background-color: black;">
+            <!-- <div id="narrowsm">
                 <div class="wrapper">
-                    <!-- https://www.codingflicks.com/2020/09/contact-form-design.html -->
                     <h3>Contact</h3>
                     <form action="mailto:nckmlb@gmail.com" method="post" enctype="text/plain">
                         <p class="box">
@@ -145,8 +197,8 @@
                     </form>
                 </div>
                 
-            </div>
-            <div id="wide" class="flex-container">
+            </div> -->
+            <div id="widesm" class="flex-container" style="margin-left: 300px;">
                 <div class="flex-item-left"> </div>
                 <div class="flex-item-bottom">
                     <center><img src="src/sm_contact.png" width="95%" height="auto" class="va"></center>
