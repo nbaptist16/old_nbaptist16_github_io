@@ -252,7 +252,8 @@ h3 span,
     color: #fff;
     /* height: 451px; */
     /* height: 500; */
-    height: 550;
+    /* height: 550; */
+    height: 90vh;
   }
   
   .btn-jumbo {
