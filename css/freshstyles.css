@@ -247,7 +247,7 @@ h3 span,
     /* background-size: cover; */
     background-size: contain;
     color: #fff;
-    height: 450px;
+    height: 451px;
   }
   
   .btn-jumbo {
@@ -656,9 +656,6 @@ p.feet-keys:hover {
 }
 /* end */
 
-.navback {
-  height: 
-}
 
 /* Generously donated by Matthew Elwin (read: blatantly stolen. Thank you, Matt!) */
 /* TODO: side nav for projects */
