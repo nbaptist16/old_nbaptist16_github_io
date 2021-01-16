@@ -246,7 +246,7 @@ h3 span,
     background-position: center;
     /* background-size: cover; */
     /* background-size: contain; */
-    background-size: auto;
+    background-size: 1050px 450px;
     color: #fff;
     height: 451px;
   }
