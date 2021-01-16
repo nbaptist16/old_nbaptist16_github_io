@@ -250,7 +250,8 @@ h3 span,
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #fff;
-    height: 451px;
+    /* height: 451px; */
+    height: 500;
   }
   
   .btn-jumbo {
@@ -313,7 +314,7 @@ h3 span,
   display: flex;
   /* max-height: 800px; */
   max-height: 600px;
-  width: ;
+  /* width: ; */
 }
 #narrow {
   width: 500px;
