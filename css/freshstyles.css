@@ -230,15 +230,24 @@ h3 span,
   .default {color: #fdbcff;
   font-weight: bold;}
 
+  /* .jumbo-bg {
+    background-attachment: fixed;  
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("jumbo.png");
+    background-position: center;
+    background-size: contain;
+    color: #fff;
+    height: 400px;
+  } */
+
   .jumbo-bg {
     background-attachment: fixed;  
     /* background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/stadium.jpeg"); */
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("jumbo.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("jumbov2.png");
     background-position: center;
     /* background-size: cover; */
     background-size: contain;
     color: #fff;
-    height: 400px;
+    height: 450px;
   }
   
   .btn-jumbo {
@@ -606,16 +615,6 @@ p.feet-keys:hover {
 
 /* added for index grid gallery */
 
-/* body {
-  margin: 0;
-  font-family: Arial;
-} */
-
-/* .header {
-  text-align: center;
-  padding: 32px;
-} */
-
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -656,6 +655,10 @@ p.feet-keys:hover {
   }
 }
 /* end */
+
+.navback {
+  height: 
+}
 
 /* Generously donated by Matthew Elwin (read: blatantly stolen. Thank you, Matt!) */
 /* TODO: side nav for projects */
