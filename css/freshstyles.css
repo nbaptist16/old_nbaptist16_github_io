@@ -247,7 +247,8 @@ h3 span,
     /* background-size: cover; */
     /* background-size: contain; */
     /* background-size: 1050px 450px; */
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
+    background-size: 80% 80%;
     /* background-size: contain; */
     background-repeat: no-repeat;
     color: #fff;
