@@ -664,6 +664,17 @@ p.feet-keys:hover {
 }
 /* end */
 
+.egg {
+  background-image: url("eggo.png");
+  /* opacity: 0.5; */
+  /* background-size: 100% 100%; */
+  /* background-size: 50% 50%; */
+  background-size: 25% 25%;
+  background-position: center;
+  /* background-repeat: repeat-x; */
+  background-repeat: repeat;
+}
+
 
 /* Generously donated by Matthew Elwin (read: blatantly stolen. Thank you, Matt!) */
 /* TODO: side nav for projects */
