@@ -159,7 +159,7 @@
             </p>
             <p>
                 The construction of this project utilizes <code>laser cutting</code>, <code>milling</code>, and a little bit of work on the <code>band saw</code>.<br>
-                SVG files were made using the dimensions from mattdibi's original case <a href="https://github.com/mattdibi/yampad/tree/master/case" target="_blank" style="margin: auto;">models</a>. The laser cut design requires less material and is more efficient to construct due to the greatly increased depth of the project to account for the servos below. It also allows for the user to adjust the servo to key switch connections easily (and it's pretty cool to see the whole thing in action). The design files can be found <a href="https://github.com/nbaptist16/yampad2/src/yamboi.pdf" target="_blank" style="margin: auto;">here</a><br>
+                SVG files were made using the dimensions from mattdibi's original case <a href="https://github.com/mattdibi/yampad/tree/master/case" target="_blank" style="margin: auto;">models</a>. The laser cut design requires less material and is more efficient to construct due to the greatly increased depth of the project to account for the servos below. It also allows for the user to adjust the servo to key switch connections easily (and it's pretty cool to see the whole thing in action). The design files can be found <a href="https://github.com/nbaptist16/yampad2/tree/master/materials" target="_blank" style="margin: auto;">here</a>.<br>
             </p>
 
             <p>
@@ -170,11 +170,11 @@
             <hr>
             <h6>Challenges and Solutions:</h6>
             <p>
-                As with any mechatronics project, there were a good deal of challenges along the way. However the two most significant were the QMK Firmware learning curve, the mechatronics troubleshooting of real-life systems, and the unreliability of the strings.<br>
+                As with any mechatronics project, there were a good deal of challenges along the way. However the two most significant were the QMK Firmware learning curve, the mechatronics troubleshooting of real-life systems, and the unreliability of the strings.<br><br>
                 <b>Firmware challenge:</b><br>
                 The firmware challenge was mostly due to my inexperience with custom keyboards in the past. Although the tutorial online (as mentioned in the README) was thorough, the source did not specifically support the yampad and adjustments had to be made accordingly.<br>
                 However, troubleshooting what was helpful in learning more about QMK_Firmware, as it required reading through files and documentation, which isn't often written simply for new learners. Unsurprisingly, the biggest help came from <a href="https://github.com/mattdibi/yampad/issues/9" target="_blank" style="margin:auto;">a thread</a> on the original yampad repository.<br>
-                
+                <br>
                 <b>Troubleshooting challenge:</b>
                 Much like the firmware challenge, a amount of time was spent attempting to debut the board, as only certain keys would respond in the beginning. This resulted in less obvious mistakes that required W. Strong's assistance to fix.<br>
                 This being the first time I tried my hand at SMD soldering (and without tweezers) resulted in some messy connections. If certain keys don't work, a list of possible solutions are as follows:<br>
@@ -183,10 +183,10 @@
             </p>
             <p align="center">
                 <img src="src/winproimg/162051061_259012542223269_6042337713113042721_n.jpg" width="400px" height="auto">
-            </p><br>
+            </p>
             <p>
                 &emsp; 3. If after testing each key, it is determined that all should be working, but no numbers are being output, this may be due to numlock being off. For LINUX users, this can be solved by installing <code>numlockx</code>. You can then toggle numlock on with the command, <code>numlockx on</code>.<br>
-
+                <br>
                 <b>Hardware challenge:</b><br>
                 The strings were a way to save some vertical space in the keyboard, as it is already sitting at over 2" high, and to simplify the control of a group of actuators. Fortunately, this second issue became irrelevant with the introduction of the Pololu Maestro to the makeup. Unfortunately, the strings still posed a slight problem, as they tended to shift around and were thin enough to snap on occasion.<br>
                 While tying the strings to the servos was the most secure, it was difficult to measure out and control precise distances when tying knots in thin threads. Adhesives such as tape and hot glue were also considered, but were eventually decided against for various reasons such as its unreliability (tape) and the permanence of the hot glue. Instead, it was decided to use binder clips to hold the strings in place due to their strong clamping force (which fits nicely on the servo mount plate) and their inconspicuous appearance when the tabs are folded down onto the servo plate. They also allowed the user to quickly and easily adjust the strings' positioning, which also made it easier to troubleshoot.<br>
@@ -201,7 +201,6 @@
             <p>
                 M
             </p> -->
-            <hr>
             <h6>Results:</h6>
             <p>
                 <center><img src="src/winproimg/20210316_161926.jpg" width="400px" height="auto"></center><br>
