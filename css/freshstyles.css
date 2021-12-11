@@ -541,6 +541,13 @@ h3 span,
   margin: auto;
 }
 
+#bigfeat {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
 #desc {
   max-width: 80%;
   margin: auto;
