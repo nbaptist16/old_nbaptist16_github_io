@@ -189,7 +189,7 @@
                 <code>Software</code>:<br>
                 It was decided to move away from hardware-based controls to limit potential mechanical failures and costs as much as possible, but also to keep the controls and any necessary visualization in one place.
                 This was done by using four pins to control the pressure regulator and the solenoid valve. As seen in the pcb design above, pins B12 and B13 are used to control the solenoid valve H-bridge and pins B10 and B11 are available (so they were used for the second H-bridge set up in the development area).
-                Unfortunately, the solenoid required a much higher pwm frequency and the pressure regulator signal required a much lower frequency. To address this, two sets of pins utilized different timer/period pairs.
+                Unfortunately, the solenoid required a much higher pwm frequency and the pressure regulator signal required a much lower frequency. To address this, the two sets of pins utilized different timer/period pairs to achieve different frequencies (50 Hz for the solenoid valve and 100 Hz for the pressure regulator).
 
                 To ensure that control of the system remains strictly digital, an additional friendly Python UI to collect, visualize, and store data was implemented.
             </p>
@@ -223,7 +223,7 @@
                 &emsp; * ILI9341 2.8" SPI TFT LCD Display 240X320 Module<br>
                 &emsp; * CSTLS8M00G53-B0<br>
                 &emsp; * L4931CZ33-AP<br>
-                &emsp; * Breadboard-friendly SPDT Slide Switch)<br>
+                &emsp; * Breadboard-friendly SPDT Slide Switch<br>
                 &emsp; * 1 uF capacitor (x3)<br>
                 &emsp; * 0.1 uF capacitor (x2)<br>
                 &emsp; * 10 uF capacitor<br>
@@ -276,7 +276,7 @@
 <!--  -->
 <!--  -->
             <hr>
-            <h6>Challenges and Solutions:</h6>
+            <h6>Discussion, Challenges, and Solutions:</h6>
             <p>
                 As with any mechatronics project, there were a good deal of challenges along the way. However the two most significant were the mechatronics troubleshooting of real-life systems, and the search for undocumented product information.<br><br>
                 <code>Troubleshooting challenge</code>:<br>
@@ -306,7 +306,7 @@
                 For the future, a thorough characterization of the forces applied by the cylinder onto the fingertip would be ideal to ensure a reliable, controlled force for every trial. Using a hand interface to mount the cylinder would help to standardize the distribution, and it would also keep the cylinder stationary.<br>
                 <center><img src="src/finproimg/handinterface.jpg" width="400px" height="auto"></center>
                 <center><small>Preliminary hand interface</small></center>
-                <center><small>Note: while a test hand interface was designed and fabricated, it was not used in the final version, as the plastic hardware proved too flimsy.</small></center>
+                <center><small>Note: while a test hand interface was designed and fabricated, it was not used in the final version, as the plastic hardware was too flimsy.</small></center>
 
                 <br><p>
                     The ability to control the airflow through the top opening of the cylinder could also help to maintain a more stable pressure value. While it may not have a significant effect on the study, adding an additional pressure sensor to measure the pressure at retraction could complement the pressure readings at extension (when the piston is exposed). Such measurements could also tell us what amount of force is necessary to force the cylinder into a retracted position while airflow is directed to the bottom chamber without requiring the test subject to overexert themself. Instead, the collected data could be used to determine an output pressure that would be challenging enough for the test subject to oppose without the concern of any harm.
@@ -314,7 +314,8 @@
                 <center><img src="src/finproimg/leak.jpg" width="400px" height="auto"></center><br>
 
                 <br><p>
-                    Finally, additional sensing could be added to expand the measured data from each trial. Types of sensors that come to mind are a force sensor and a position sensor to further characterize the tactile stimulus provided. These sensors could also aid in the standardization of the setup, as previously mentioned with the hand interface. As mentioned in the previous iteration of this project, knowing if and when the piston engages with the finger is also important information, especially as pressure data is being logged in real time. To collect this data, a conductive and MRI-compatible material, such as aluminum foil, which is non-ferromagnetic, could serve as a capacitance sensor and safely be implemented to determine the exact moment of contact.
+                    Finally, additional sensing could be added to expand the measured data from each trial. A force sensor and a position sensor could further characterize the tactile stimulus provided by measuring the physical output of the pneumatic system (rather than just measuring the system internally through pressures). These sensors could also aid in the standardization of the setup, as exemplified with the hand interface.
+                    As mentioned in the previous iteration of this project, knowing if and when the piston engages with the finger is also important information, especially as pressure data is being logged in real time. To collect this data, a conductive and MRI-compatible material, such as aluminum foil, which is non-ferromagnetic, could serve as a capacitance sensor and safely be implemented to determine the exact moment of contact.
                 </p>
             </p>
             <hr>
@@ -329,7 +330,10 @@
             </p> -->
             <h6>Results:</h6>
             <p>
-                <center><img src="src/finproimg/controls.jpg" width="400px" height="auto"></center><br>
+                <center>
+                    <img src="src/finproimg/controls.jpg" width="400px" height="auto">
+                    <img src="src/finproimg/actuatenadjust.gif" width="400px" height="auto">
+                </center><br>
                 <p>Although testing using the actual MRI scanner was not possible this quarter due to time constraints, such testing will commence next quarter with the current setup, which has been reviewed by Northwestern University's Center for Translational Imaging.</p>
                 <center>
                     <p>PS: It works!</p>
