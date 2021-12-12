@@ -159,6 +159,12 @@
                 Left: Figure 2.1.1: schematic of the system &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Right: PCB design
             </center></small>
             <small><center>Note: a brief overview of each component's purpose is addressed in the appendix of the <a href="https://github.com/nbaptist16/finpro/blob/master/readme.pdf" target="_blank" style="margin: auto;">manual</a></center></small>
+            <p>
+                Although the circuit design was based off of the original design by Alexander Hay, there were some hardware and software chages necessary to meet the project requirements. The original MIC2940A voltage regulator was replaced with a DC to DC converter to simplify the circuit, as the DC DC converter could convert the already present 24 V input into the necessary 5 V for the H-bridges and pressure sensor. 
+                A new digital pressure regulator was used, as the previous regulator was a significantly more expensive and more difficult to obtain. The new regulator was still able to control the pressure output over a wide enough range; when pushing back against the extended piston, the that the resistance experienced when pushing back on the extended piston was clearly noticeable towards either end of the spectrum (low pressure vs high pressure output).
+                Two H-bridges were introduced to control the solenoid valve and pressure regulator digitally rather than with hardware such as a toggle switch and dial. Both the pressure regulator and solenoid valve were controled via pwm, but only the analog signal for the pressure regulator required an additional RC low-pass filter. The proper resistor, capacitor, and frequency values were determined through extensive testing of different combinations of variables.
+                Slide switches, as seen in the pcb and circuit diagrams above, were also incorporated to allow the user to quickly connect and disconnect the circuit components from power for debugging and any potential emergency situations.
+            </p>
             <br>
             <p>
                 <code>Cylinder</code>:<br>
@@ -182,7 +188,10 @@
             <p>
                 <code>Software</code>:<br>
                 It was decided to move away from hardware-based controls to limit potential mechanical failures and costs as much as possible, but also to keep the controls and any necessary visualization in one place.
-                This resulted in the addition of fully automatable execution and a friendly Python UI to collect, visualize, and store data.
+                This was done by using four pins to control the pressure regulator and the solenoid valve. As seen in the pcb design above, pins B12 and B13 are used to control the solenoid valve H-bridge and pins B10 and B11 are available (so they were used for the second H-bridge set up in the development area).
+                Unfortunately, the solenoid required a much higher pwm frequency and the pressure regulator signal required a much lower frequency. To address this, two sets of pins utilized different timer/period pairs.
+
+                To ensure that control of the system remains strictly digital, an additional friendly Python UI to collect, visualize, and store data was implemented.
             </p>
             <hr>
             
@@ -272,8 +281,12 @@
                 As with any mechatronics project, there were a good deal of challenges along the way. However the two most significant were the mechatronics troubleshooting of real-life systems, and the search for undocumented product information.<br><br>
                 <code>Troubleshooting challenge</code>:<br>
                 A significant amount of time was spent attempting to debug all different iterations of the board. Many hours were spent desoldering and resoldering components just to be sure they worked.<br>
-                <small>(Protip: please just make your own footprints for your PCB design!)</small><br>
-                Unfortunately, two L4931 voltage regulators did not make it through this quarter.<br>
+                <center><small>Protip: just make your own footprints for your PCB design! Otherwise, your pcb might look like this</small><br></center>
+                <center><img src="src/finproimg/jumperd.jpg" width="200px" height="auto"><br></center>
+                <br>
+                <p>
+                    Unfortunately, two L4931 voltage regulators did not make it through this quarter.<br>
+                </p>
             </p> 
             <p align="center">
                 <img src="src/finproimg/rip_dip.png" width="200px" height="auto">
