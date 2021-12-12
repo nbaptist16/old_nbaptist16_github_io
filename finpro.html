@@ -115,7 +115,7 @@
                     <img src="src/finproimg/fig1-1-1.png" width="400px" height="auto">
                 </center>
             </p>
-            <small><center>Figure 1.1.1</center></small> 
+            <small><center>Figure 1.1.1: pipeline of project system</center></small> 
             <hr>
             <h6>Technical Objectives:</h6>
             <p>
@@ -156,8 +156,9 @@
                 <img src="src/finproimg/finpro_brd3.png" width="400px" height="auto">
             </center></p>
             <small><center>
-                Left: Figure 2.1.1 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Right: PCB design
+                Left: Figure 2.1.1: schematic of the system &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Right: PCB design
             </center></small>
+            <small><center>Note: a brief overview of each component's purpose is addressed in the appendix of the <a href="https://github.com/nbaptist16/finpro/blob/master/readme.pdf" target="_blank" style="margin: auto;">manual</a></center></small>
             <br>
             <p>
                 <code>Cylinder</code>:<br>
@@ -251,11 +252,18 @@
                 &emsp; * Power adaptor: 24V, 4.8W<br>
                 
                 <small>Note: the links to purchasing can be found in the <a href="https://github.com/nbaptist16/finpro/blob/master/README.md" target="_blank" style="margin: auto;">README.md</a></small><br>
-                <small>Additionally, information regarding the assembly of this project can be found in the <a href="https://github.com/nbaptist16/finpro/blob/master/README.md" target="_blank" style="margin: auto;">manual</a></small>
+                <small>Additionally, information regarding the assembly of this project can be found in the <a href="https://github.com/nbaptist16/finpro/blob/master/readme.pdf" target="_blank" style="margin: auto;">manual</a></small>
             </p>
             <p>
                 The construction of this project utilizes <code>laser cutting</code>, <code>milling</code>, <code>lathe work</code>, <code>3D printing</code>, and a little bit of work on the <code>band saw</code>.<br>
             </p>
+            <p align="center">
+                <img src="src/finproimg/cylinder.jpg" width="auto" height="150px">
+                <img src="src/finproimg/case.jpg" width="200px" height="auto">
+                <img src="src/finproimg/pcb.jpg" width="200px" height="auto">
+                <img src="src/finproimg/alltogethernow.jpg" width="200px" height="auto">
+            </p>
+            <small><center>From left to right: finished cylinder, testing case, pcb assembly with case, component setup</center></small>
 <!--  -->
 <!--  -->
             <hr>
@@ -275,15 +283,26 @@
                 While purchasing copies of more well-known branded items helped to trim down the budget, such products don't always come equipped with full documentation. The most difficult of these challenges was with the replacement pressure regulator, as some crucial information was left off of the included datasheet.
                 <br>
             </p>
-            <small>
+            <!-- <small>
                 Note: additional documentation recording tips, tricks, and supplemental information learned throughout the course of this project are included with the manual in the git repo.
-            </small>
+            </small> -->
+            <small>Note: additional documentation recording tips, tricks, and supplemental information learned throughout the course of this project are included with the <a href="https://github.com/nbaptist16/finpro/blob/master/readme.pdf" target="_blank" style="margin: auto;">manual</a> in the git repo.</small>
             <p>
                 <br>
                 <code>Future work</code>:<br>
                 For the future, a thorough characterization of the forces applied by the cylinder onto the fingertip would be ideal to ensure a reliable, controlled force for every trial. Using a hand interface to mount the cylinder would help to standardize the distribution, and it would also keep the cylinder stationary.<br>
-                <br>The ability to control the airflow through the top opening of the cylinder could also help to maintain a more stable pressure value. While it may not have a significant effect on the study, adding an additional pressure sensor to measure the pressure at retraction could complement the pressure readings at extension (when the piston is exposed). Such measurements could also tell us what amount of force is necessary to force the cylinder into a retracted position while airflow is directed to the bottom chamber without requiring the test subject to overexert themself. Instead, the collected data could be used to determine an output pressure that would be challenging enough for the test subject to oppose without the concern of any harm.<br>
-                <br>Finally, additional sensing could be added to expand the measured data from each trial. Types of sensors that come to mind are a force sensor and a position sensor to further characterize the tactile stimulus provided. These sensors could also aid in the standardization of the setup, as previously mentioned with the hand interface. As mentioned in the previous iteration of this project, knowing if and when the piston engages with the finger is also important information, especially as pressure data is being logged in real time. To collect this data, a conductive and MRI-compatible material, such as aluminum foil, which is non-ferromagnetic, could serve as a capacitance sensor and safely be implemented to determine the exact moment of contact.
+                <center><img src="src/finproimg/handinterface.jpg" width="400px" height="auto"></center><br>
+                <center><small>Preliminary hand interface</small></center>
+                <center><small>Note: while a test hand mout was designed and fabricated, it was not used in the final version, as the </small></center>
+
+                <br><p>
+                    The ability to control the airflow through the top opening of the cylinder could also help to maintain a more stable pressure value. While it may not have a significant effect on the study, adding an additional pressure sensor to measure the pressure at retraction could complement the pressure readings at extension (when the piston is exposed). Such measurements could also tell us what amount of force is necessary to force the cylinder into a retracted position while airflow is directed to the bottom chamber without requiring the test subject to overexert themself. Instead, the collected data could be used to determine an output pressure that would be challenging enough for the test subject to oppose without the concern of any harm.
+                </p><br>
+                <center><img src="src/finproimg/leak.jpg" width="400px" height="auto"></center><br>
+
+                <br><p>
+                    Finally, additional sensing could be added to expand the measured data from each trial. Types of sensors that come to mind are a force sensor and a position sensor to further characterize the tactile stimulus provided. These sensors could also aid in the standardization of the setup, as previously mentioned with the hand interface. As mentioned in the previous iteration of this project, knowing if and when the piston engages with the finger is also important information, especially as pressure data is being logged in real time. To collect this data, a conductive and MRI-compatible material, such as aluminum foil, which is non-ferromagnetic, could serve as a capacitance sensor and safely be implemented to determine the exact moment of contact.
+                </p>
             </p>
             <hr>
             <!-- <h6>Code:</h6>
@@ -298,7 +317,10 @@
             <h6>Results:</h6>
             <p>
                 <center><img src="src/finproimg/controls.jpg" width="400px" height="auto"></center><br>
-                It works!
+                <p>Although testing using the actual MRI scanner was not possible this quarter due to time constraints, such testing will commence next quarter with the current setup, which has been reviewed by Northwestern University's Center for Translational Imaging.</p><br>
+                <center>
+                    <p>PS: It works!</p>
+                </center>
             </p>
             <hr>
             <h6>Acknowledgements:</h6>
